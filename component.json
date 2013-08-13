@@ -11,6 +11,7 @@
     "component/jquery":"*"
   },
   "scripts":[
+    "index.js",
     "dist/js/bootstrap.js"
   ],
   "main": "dist/js/bootstrap.js",
