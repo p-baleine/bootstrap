@@ -14,7 +14,7 @@
     "dist/js/bootstrap.js"
   ],
   "main": "dist/js/bootstrap.js",
-  "styles":[
-    "docs/css/bootstrap.css",
+  "styles": [
+    "docs/css/bootstrap.css"
   ]
 }
