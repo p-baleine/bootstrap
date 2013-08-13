@@ -1,0 +1,20 @@
+{
+  "name":"bootstrap",
+  "version":"3.0.0-wip",
+  "description":"Component version of the full twitter bootstrap framework",
+  "homepage":"http://twitter.github.com/bootstrap",
+  "keywords":[
+    "twitter",
+    "bootstrap"
+  ],
+  "dependencies":{
+    "component/jquery":"*"
+  },
+  "scripts":[
+    "dist/js/bootstrap.js"
+  ],
+  "main": "dist/js/bootstrap.js",
+  "styles":[
+    "docs/css/bootstrap.css",
+  ]
+}
