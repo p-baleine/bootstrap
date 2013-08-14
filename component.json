@@ -55,6 +55,6 @@
     "less/carousel.less",
     "less/jumbotron.less",
     "less/utilities.less",
-    "less/responsive-utilities.less",
+    "less/responsive-utilities.less"
   ]
 }
