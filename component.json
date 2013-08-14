@@ -15,9 +15,6 @@
     "dist/js/bootstrap.js"
   ],
   "main": "index.js",
-  "styles": [
-    "less/bootstrap.less"
-  ],
   "files": [
     "less/variables.less",
     "less/mixins.less",
@@ -55,6 +52,7 @@
     "less/carousel.less",
     "less/jumbotron.less",
     "less/utilities.less",
-    "less/responsive-utilities.less"
+    "less/responsive-utilities.less",
+    "less/bootstrap.less"
   ]
 }
