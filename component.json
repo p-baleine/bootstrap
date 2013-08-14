@@ -16,6 +16,9 @@
   ],
   "main": "index.js",
   "styles": [
+    "less/bootstrap.less"
+  ],
+  "files": [
     "less/variables.less",
     "less/mixins.less",
     "less/normalize.less",
@@ -53,6 +56,5 @@
     "less/jumbotron.less",
     "less/utilities.less",
     "less/responsive-utilities.less",
-    "less/bootstrap.less"
   ]
 }
