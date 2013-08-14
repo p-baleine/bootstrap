@@ -1481,6 +1481,13 @@ table th[class^="col-"] {
   border-color: #d6e9c6;
 }
 
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td {
+  background-color: #d0e9c6;
+  border-color: #c9e2b3;
+}
+
 .table > thead > tr > td.danger,
 .table > tbody > tr > td.danger,
 .table > tfoot > tr > td.danger,
@@ -1497,6 +1504,13 @@ table th[class^="col-"] {
   border-color: #eed3d7;
 }
 
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td {
+  background-color: #ebcccc;
+  border-color: #e6c1c7;
+}
+
 .table > thead > tr > td.warning,
 .table > tbody > tr > td.warning,
 .table > tfoot > tr > td.warning,
@@ -1511,20 +1525,6 @@ table th[class^="col-"] {
 .table > tfoot > tr.warning > th {
   background-color: #fcf8e3;
   border-color: #fbeed5;
-}
-
-.table-hover > tbody > tr > td.success:hover,
-.table-hover > tbody > tr > th.success:hover,
-.table-hover > tbody > tr.success:hover > td {
-  background-color: #d0e9c6;
-  border-color: #c9e2b3;
-}
-
-.table-hover > tbody > tr > td.danger:hover,
-.table-hover > tbody > tr > th.danger:hover,
-.table-hover > tbody > tr.danger:hover > td {
-  background-color: #ebcccc;
-  border-color: #e6c1c7;
 }
 
 .table-hover > tbody > tr > td.warning:hover,
@@ -1705,23 +1705,6 @@ textarea.form-control {
 }
 
 .input-sm {
-  height: 45px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
-
-select.input-sm {
-  height: 45px;
-  line-height: 45px;
-}
-
-textarea.input-sm {
-  height: auto;
-}
-
-.input-lg {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -1729,9 +1712,26 @@ textarea.input-sm {
   border-radius: 3px;
 }
 
-select.input-lg {
+select.input-sm {
   height: 30px;
   line-height: 30px;
+}
+
+textarea.input-sm {
+  height: auto;
+}
+
+.input-lg {
+  height: 45px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+select.input-lg {
+  height: 45px;
+  line-height: 45px;
 }
 
 textarea.input-lg {
@@ -2260,18 +2260,18 @@ input[type="button"].btn-block {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
+  height: 45px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
 }
 
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 30px;
-  line-height: 30px;
+  height: 45px;
+  line-height: 45px;
 }
 
 textarea.input-group-lg > .form-control,
@@ -2283,18 +2283,18 @@ textarea.input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 45px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
 }
 
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 45px;
-  line-height: 45px;
+  height: 30px;
+  line-height: 30px;
 }
 
 textarea.input-group-sm > .form-control,
@@ -2712,17 +2712,17 @@ a.list-group-item:focus {
   border-color: #428bca;
 }
 
-.panel-primary .panel-heading {
+.panel-primary > .panel-heading {
   color: #ffffff;
   background-color: #428bca;
   border-color: #428bca;
 }
 
-.panel-primary .panel-heading + .panel-collapse .panel-body {
+.panel-primary > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #428bca;
 }
 
-.panel-primary .panel-footer + .panel-collapse .panel-body {
+.panel-primary > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #428bca;
 }
 
@@ -2730,17 +2730,17 @@ a.list-group-item:focus {
   border-color: #d6e9c6;
 }
 
-.panel-success .panel-heading {
+.panel-success > .panel-heading {
   color: #468847;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
 
-.panel-success .panel-heading + .panel-collapse .panel-body {
+.panel-success > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #d6e9c6;
 }
 
-.panel-success .panel-footer + .panel-collapse .panel-body {
+.panel-success > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #d6e9c6;
 }
 
@@ -2748,17 +2748,17 @@ a.list-group-item:focus {
   border-color: #fbeed5;
 }
 
-.panel-warning .panel-heading {
+.panel-warning > .panel-heading {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #fbeed5;
 }
 
-.panel-warning .panel-heading + .panel-collapse .panel-body {
+.panel-warning > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #fbeed5;
 }
 
-.panel-warning .panel-footer + .panel-collapse .panel-body {
+.panel-warning > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #fbeed5;
 }
 
@@ -2766,17 +2766,17 @@ a.list-group-item:focus {
   border-color: #eed3d7;
 }
 
-.panel-danger .panel-heading {
+.panel-danger > .panel-heading {
   color: #b94a48;
   background-color: #f2dede;
   border-color: #eed3d7;
 }
 
-.panel-danger .panel-heading + .panel-collapse .panel-body {
+.panel-danger > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #eed3d7;
 }
 
-.panel-danger .panel-footer + .panel-collapse .panel-body {
+.panel-danger > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #eed3d7;
 }
 
@@ -2784,17 +2784,17 @@ a.list-group-item:focus {
   border-color: #bce8f1;
 }
 
-.panel-info .panel-heading {
+.panel-info > .panel-heading {
   color: #3a87ad;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
 
-.panel-info .panel-heading + .panel-collapse .panel-body {
+.panel-info > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #bce8f1;
 }
 
-.panel-info .panel-footer + .panel-collapse .panel-body {
+.panel-info > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #bce8f1;
 }
 
@@ -3154,10 +3154,10 @@ button.close {
 }
 
 .navbar-collapse {
-  max-height: 360px;
+  max-height: 340px;
   padding: 5px 15px;
   overflow-x: visible;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-top: 1px solid #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -3186,9 +3186,9 @@ button.close {
 @media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     border-top: 0;
+    box-shadow: none;
   }
 }
 
@@ -3308,10 +3308,6 @@ button.close {
   background-color: transparent;
 }
 
-.navbar-nav.pull-right {
-  width: 100%;
-}
-
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -3350,11 +3346,25 @@ button.close {
   }
 }
 
+@media (min-width: 768px) {
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-right {
+    float: right !important;
+  }
+  .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+
 .navbar-form {
-  width: 100%;
   padding: 10px 15px;
   margin-top: 8px;
+  margin-right: -15px;
   margin-bottom: 8px;
+  margin-left: -15px;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -3393,6 +3403,8 @@ button.close {
     width: auto;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
     border: 0;
   }
 }
@@ -3524,6 +3536,9 @@ button.close {
 }
 
 @media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #999999;
   }
@@ -3558,9 +3573,6 @@ button.close {
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
-  }
-  .navbar-nav.pull-right {
-    width: auto;
   }
   .navbar-toggle {
     position: relative;
@@ -3859,6 +3871,7 @@ button.close {
 .btn-group-justified {
   display: table;
   width: 100%;
+  border-collapse: separate;
   table-layout: fixed;
 }
 

@@ -1128,13 +1128,13 @@ base_url: "../"
               </ul>
             </li>
           </ul>
-          <form class="navbar-form pull-left" role="search">
+          <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
-          <ul class="nav navbar-nav pull-right">
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Link</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -1179,13 +1179,13 @@ base_url: "../"
         </ul>
       </li>
     </ul>
-    <form class="navbar-form pull-left" action="" role="search">
+    <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
-    <ul class="nav navbar-nav pull-right">
+    <ul class="nav navbar-nav navbar-right">
       <li><a href="#">Link</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -1282,7 +1282,8 @@ base_url: "../"
 {% endhighlight %}
 
     <h3 id="navbar-component-alignment">Component alignment</h3>
-    <p>Align nav links, forms, buttons, or text, using the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction. To align nav links, put them in a separate <code>&lt;ul&gt;</code> with the respective utility class applied.</p>
+    <p>Align nav links, forms, buttons, or text, using the <code>.navbar-left</code> or <code>.navbar-right</code> utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <code>&lt;ul&gt;</code> with the respective utility class applied.</p>
+    <p>These classes are mixin-ed versions of <code>.pull-left</code> and <code>.pull-right</code>, but they're scoped to media queries for easier handling of navbar components across device sizes.</p>
 
 
     <h2>Optional display variations</h2>
@@ -1444,25 +1445,25 @@ body { padding-bottom: 70px; }
     <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
     <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
     <div class="bs-example">
-      <ul class="breadcrumb">
+      <ol class="breadcrumb">
         <li class="active">Home</li>
-      </ul>
-      <ul class="breadcrumb">
+      </ol>
+      <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li class="active">Library</li>
-      </ul>
-      <ul class="breadcrumb" style="margin-bottom: 5px;">
+      </ol>
+      <ol class="breadcrumb" style="margin-bottom: 5px;">
         <li><a href="#">Home</a></li>
         <li><a href="#">Library</a></li>
         <li class="active">Data</li>
-      </ul>
+      </ol>
     </div>
 {% highlight html %}
-<ul class="breadcrumb">
+<ol class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>
   <li class="active">Data</li>
-</ul>
+</ol>
 {% endhighlight %}
   </div>
 
