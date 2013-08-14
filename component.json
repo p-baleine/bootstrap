@@ -16,6 +16,7 @@
   ],
   "main": "index.js",
   "styles": [
-    "dist/css/bootstrap.css"
+    "dist/css/bootstrap.css",
+    "less/variables.less"
   ]
 }
