@@ -10,11 +10,6 @@
   "dependencies":{
     "component/jquery":"*"
   },
-  "scripts":[
-    "index.js",
-    "dist/js/bootstrap.js"
-  ],
-  "main": "index.js",
   "files": [
     "less/variables.less",
     "less/mixins.less",
