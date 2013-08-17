@@ -3,5 +3,6 @@
  * Module dependencies.
  */
 
-var $ = window.jQuery = require("jquery"),
-    bootstrap = require("./dist/js/bootstrap");
+var $ = window.jQuery = require("jquery");
+
+require("./js/collapse");

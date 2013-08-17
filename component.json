@@ -10,6 +10,11 @@
   "dependencies":{
     "component/jquery":"*"
   },
+  "scripts":[
+    "index.js",
+    "js/collapse.js"
+  ],
+  "main": "index.js",
   "files": [
     "less/variables.less",
     "less/mixins.less",
